@@ -30,35 +30,35 @@ import os
 #     print("Record not found.")
 # accounts.close()
 
-print(f"---Welcome to Aziz's Bank Customer Service---")
+# print(f"---Welcome to Aziz's Bank Customer Service---")
 
-if os.path.exists("accounts.txt"):
-    print("File exists. You can add new accounts.")
-else:
-    accounts = open("accounts.txt", mode="w")
-    accounts.close()
-    print("File does not exist. A new file has been created. You can add new accounts.")
+# if os.path.exists("accounts.txt"):
+#     print("File exists. You can add new accounts.")
+# else:
+#     accounts = open("accounts.txt", mode="w")
+#     accounts.close()
+#     print("File does not exist. A new file has been created. You can add new accounts.")
 
-while True:
-    accounts = open("accounts.txt", mode="r")
-    lines = accounts.readlines()
-    accounts.close()
-    if len(lines) == 0:
-        iban = 1000
-    else:
-        last_line = lines[-1].split()
-        last_id = int(last_line[0])
-        iban = last_id + 1
+# while True:
+#     accounts = open("accounts.txt", mode="r")
+#     lines = accounts.readlines()
+#     accounts.close()
+#     if len(lines) == 0:
+#         iban = 1000
+#     else:
+#         last_line = lines[-1].split()
+#         last_id = int(last_line[0])
+#         iban = last_id + 1
 
-    name = input("Enter the account holder's name: ")
-    balance = input("Enter the bank balance: ")
-    new_record = f"{iban} {name} Rs.{balance}\n"
-    accounts = open("accounts.txt", mode="a")
-    accounts.write(new_record)
+#     name = input("Enter the account holder's name: ")
+#     balance = input("Enter the bank balance: ")
+#     new_record = f"{iban} {name} Rs.{balance}\n"
+#     accounts = open("accounts.txt", mode="a")
+#     accounts.write(new_record)
 
-    print("New account added successfully.")
-    print(f"Your account details:\nIBAN: {iban}\nName: {name}\nBalance: Rs.{balance}")
-    choice = input("Do you want to add another account (Y/n)? ").upper()
-    if choice != "Y":
-        break
-accounts.close()
+#     print("New account added successfully.")
+#     print(f"Your account details:\nIBAN: {iban}\nName: {name}\nBalance: Rs.{balance}")
+#     choice = input("Do you want to add another account (Y/n)? ").upper()
+#     if choice != "Y":
+#         break
+# accounts.close()

@@ -8,7 +8,7 @@
 # emp1 = Employee(1, "Ayan")
 # emp2 = Employee(2, "Hashir")
 # emp2.name = "Ali"
-# emp3 = Employee(3, "Zakir")
+# emp3 = Employee(3, "Huzaifa")
 
 # print(emp1)
 # print(emp2)

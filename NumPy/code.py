@@ -47,7 +47,7 @@ import numpy as np
 # print(f"Index of minimum value: {ran_2d.argmin()}")
 # print(f"Index of maximum value: {ran_2d.argmax()}")
 
-# dimension and size
+# dimension and size:
 # ran = np.random.randint(1, 101, 36)
 # ran_2d = ran.reshape(6, 6)
 # print(f"Dimension: {ran_2d.shape}")
@@ -55,9 +55,9 @@ import numpy as np
 # print(f"Memory size of Random 2D Array is {(ran_2d.size)*ran_2d.itemsize} bytes")
 
 # comparison
-# x = np.array([3, 5])
-# y = np.array([2, 5])
-# g_comp = np.greater_equal(x, y)
-# l_comp = np.less_equal(x, y)
-# print(f"Greater than or equal: {g_comp}")
-# print(f"Less than or equal: {l_comp}")
+x = np.array([3, 5])
+y = np.array([2, 5])
+g_comp = np.greater_equal(x, y)
+l_comp = np.less_equal(x, y)
+print(f"Greater than or equal: {g_comp}")
+print(f"Less than or equal: {l_comp}")

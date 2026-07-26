@@ -3,7 +3,7 @@ import random
 win_freq = 0
 lose_freq = 0
 
-for i in range(1000):
+for i in range(100):
     dice1 = random.randrange(1, 7)
     dice2 = random.randrange(1, 7)
     diceSum = dice1 + dice2
