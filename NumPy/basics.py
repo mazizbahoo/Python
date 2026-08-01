@@ -47,7 +47,7 @@ import numpy as np
 # print(f"Index of minimum value: {ran_2d.argmin()}")
 # print(f"Index of maximum value: {ran_2d.argmax()}")
 
-# dimension and size:
+# dimension and size
 # ran = np.random.randint(1, 101, 36)
 # ran_2d = ran.reshape(6, 6)
 # print(f"Dimension: {ran_2d.shape}")
